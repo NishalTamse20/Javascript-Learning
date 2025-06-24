@@ -68,3 +68,6 @@ console.log(GameCounter);
 
 // Operator prescendence and increment is important  ;learn post, Prefix increment
 
+let x = 3;
+let y = x++; // y = 3, x becomes 4
+console.log(x , y)
