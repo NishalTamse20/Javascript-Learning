@@ -1,10 +1,10 @@
 //JavaScript is a dynamically typed language. This means you do not need to declare variable types explicitly, and variable types can change at runtime
 // primitive data types
 
-// 7 types :- Sring, number, BigInt, Boolean, Undefined, Null, Symbol.
+// 7 types :- String, number, BigInt, Boolean, Undefined, Null, Symbol.
 
-const score = 100;// Number
-const scoreValue = 100.2;// Number
+const score = 100; // Number
+const scoreValue = 100.2; // Number
 
 const isLoggedIn = true; // Boolean
 const outsideTemp = null; // Null ==> empty value
@@ -20,15 +20,15 @@ const BigNumber = 1234567890123456789012345678901234567890n; // BigInt ==> used 
 
 // Array, Objects, functions
 
-const Heros = ["ironman", "shaktiman", "Hulk","thor"] // Array 
-let Myobj= {
+const Heros = ["ironman", "shaktiman", "Hulk", "thor"]; // Array 
+let Myobj = {
     name: "Nishal",
     age: 20,
-}
+};
 
-const MyFunction = function(){
+const MyFunction = function() {
     console.log("Hello Nishal"); 
-}
+};
 
 //how to know the data type of a variable
 console.log(typeof outsideTemp); // "number"
@@ -50,3 +50,28 @@ Return types of variables in JavaScript:
     Function    => "function"
     Object      => "object"
 */
+
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\\
+
+//   stack (Primitive) , Heap (Non-Primitive)
+
+let myYoutubename = "MrFleet";
+
+let anothername = myYoutubename;
+anothername = "Nishal learning";
+
+console.log(anothername);
+console.log(myYoutubename);
+
+let userOne = {
+    email: "user@gmail.com",
+    upi_id: "user@okaxis"
+};
+
+let userTwo = userOne;
+
+userTwo.email = "nishal@gmail.com";
+
+console.log(userOne.email);
+console.log(userTwo.email);
