@@ -75,3 +75,5 @@ userTwo.email = "nishal@gmail.com";
 
 console.log(userOne.email);
 console.log(userTwo.email);
+
+// In the above example, userOne and userTwo point to the same object in memory.
